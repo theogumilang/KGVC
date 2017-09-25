@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             NavigationPage.HasNavigationBar="False"
+             BindingContext="{Binding LoginPageViewModel, Source={StaticResource Locator}}"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KGVC.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Opacity="1"
+                   Source="image_bg.png"
+                   Aspect="AspectFill"
+                />
+            <StackLayout
+                Orientation="Horizontal"
+                Spacing="0"
+                VerticalOptions="Center"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="150"
+                BackgroundColor="#77000000">
+
+
+                <Image
+                    WidthRequest="80"
+                    Opacity="0.8"
+                    Source="image_hero_bw.png"
+                    Aspect="AspectFill"
+                    Scale="1"/>
+                <BoxView BackgroundColor="#f50057" WidthRequest="2" />
+
+                <Grid
+                    HorizontalOptions="Start"
+                    Padding="20"
+                    VerticalOptions="Center">
+
+                    <Label TextColor="White" Text="Kompas Gramedia"
+                           FontAttributes="Bold" FontSize="30"/>
+
+
+                </Grid>
+
+
+            </StackLayout>
+
+            <StackLayout 
+                Padding="20"
+                VerticalOptions="End"
+                Spacing="10">
+
+                <Button Text="Login" 
+                        x:Name="logiButton"
+                       
+                        Command="{Binding LoginCommand}"
+                        TextColor="White" BackgroundColor="#f50057"
+                  HeightRequest="40" VerticalOptions="End"/>
+
+
+
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

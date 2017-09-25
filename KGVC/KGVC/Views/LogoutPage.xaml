@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KGVC.Views.LogoutPage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Button x:Name="logoutButton" Text="Logout" Clicked="OnLogoutButtonClicked" />
+        <Label x:Name="messageLabel" FontSize="Medium" />
+        <Label Text="Change Password" FontSize="Large" HorizontalOptions="Center" Margin="5"/>
+        <Label Text="Current Password"  VerticalOptions="Center"  Margin="5"/>
+        <Entry x:Name="currentPassword"/>
+        <Label Text="New Password"  VerticalOptions="Center"/>
+        <Entry x:Name="newPassword"/>
+        <Button Text="Change Password" Clicked="ChangePasswordClicked" Margin="20"/>
+    </StackLayout>
+</ContentPage>
